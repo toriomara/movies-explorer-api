@@ -6,8 +6,6 @@
 
 ## Ссылки на проект
 
-IP 000.000.0.00
+IP 158.160.8.229
 
-Frontend https://movie43.nomoredomains.rocks
-
-Backend https://api.movie43.nomoredomains.rocks
+Backend https://movie43.nomoredomains.rocks
