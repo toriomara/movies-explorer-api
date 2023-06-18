@@ -16,8 +16,8 @@ router.use('/', crashTestRouter);
 router.post('/signup', validateSignup, createUser);
 router.post('/signin', validateSignin, login);
 
-router.use('/api/users', auth, userRouter);
-router.use('/api/movies', auth, movieRouter);
+router.use('/users', auth, userRouter);
+router.use('/movies', auth, movieRouter);
 
 router.use('/*', auth, (req, res, next) => next(new NotFoundError(MESSAGES.NOT_FOUND)));
 
