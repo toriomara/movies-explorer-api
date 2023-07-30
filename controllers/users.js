@@ -57,17 +57,20 @@ const updateUser = (req, res, next) => {
       runValidators: true,
     },
   )
+    .orFail(() => {
+      throw new NotFoundError(MESSAGES.NOT_FOUND);
+    })
     .then((user) => {
-      if (!user) {
-        throw new NotFoundError(MESSAGES.NOT_FOUND);
-      }
       res.send(user);
     })
     .catch((err) => {
-      if (err.name === 'CastError') {
-        return next(new BadRequestError(`${MESSAGES.BAD_REQUEST} при обновлении профиля`));
+      if (err.code === 11000) {
+        next(new ConflictError(`${MESSAGES.BAD_REQUEST}. Такой пользователь уже зарегистрирован`));
+      } else if (err.name === 'ValidationError') {
+        next(new BadRequestError(`${MESSAGES.BAD_REQUEST} при обновлении профиля`));
+      } else {
+        next(err);
       }
-      return next(err);
     });
 };
 
