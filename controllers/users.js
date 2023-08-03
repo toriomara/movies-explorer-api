@@ -61,7 +61,7 @@ const updateUser = (req, res, next) => {
       throw new NotFoundError(MESSAGES.NOT_FOUND);
     })
     .then((user) => {
-      res.send(user);
+      res.send({name: user.name, email: user.email});
     })
     .catch((err) => {
       if (err.code === 11000) {
