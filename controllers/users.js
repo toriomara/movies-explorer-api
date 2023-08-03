@@ -49,7 +49,7 @@ const login = (req, res, next) => {
 
 const updateUser = (req, res, next) => {
   const { email, name } = req.body;
-  User.findByIdAndUpdate(
+  return User.findByIdAndUpdate(
     req.user._id,
     { email, name },
     {
