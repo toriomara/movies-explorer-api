@@ -4,7 +4,8 @@
 
 Адрес репозитория: https://github.com/toriomara/movies-explorer-api
 
-## Ссылки на проект
+## Frontend link
+https://github.com/toriomara/movies-explorer-frontend
 
 IP 158.160.8.229
 
