@@ -1,12 +1,53 @@
-# movies-explorer-api
+# Movies Explorer API
 
-Репозиторий для приложения проекта `Movie43`, включающий фронтенд и бэкенд части приложения со следующими возможностями: авторизации и регистрации пользователей, операции с фильмама.
+Дипломный проект Yandex.Praktikum факультета "Веб-разработка".
+
+В данном репозитории находится backend часть приложения `Movie43`, включающий фронтенд и бэкенд части приложения со следующими возможностями: 
+- авторизации и регистрации пользователей;
+- добавление и удаление фильмов из избранного;
+- редактирование данных пользователя.
+
+##
+Сервер имеет следующие Роуты сервера:
+* GET     /users/me - возвращает информацию о пользователе (имя и почта);
+* PATCH   /users/me - обновляет информацию о пользователе (имя и почта);
+* GET     /movies - возвращает все сохранённые пользователем фильмы;
+* POST    /movies - создаёт фильм;
+* DELETE  /movies/_id - удаляет сохранённый фильм по id;
 
 Адрес репозитория: https://github.com/toriomara/movies-explorer-api
+Адрес сервера: https://movie43.nomoredomains.rocks
+Адрес frontend части проекта: https://github.com/toriomara/movies-explorer-frontend
 
-## Frontend link
-https://github.com/toriomara/movies-explorer-frontend
+## Ссылки на проект
+https://movie43.nomoreparties.co/
 
-IP 158.160.8.229
+## Запуск проекта 
 
-Backend https://movie43.nomoredomains.rocks
+Для запуска необходимо установить:
+* MongoDB (название базы movie43db, DB_URL = 'mongodb://127.0.0.1:27017/movie43db');
+* Node.js
+* NPM
+
+Установите зависимости:
+
+`npm install` 
+или
+`yarn init`
+
+Запустите сервер разработки:
+
+`npm start`
+или
+`yarn start`
+
+Сборка проекта:
+`npm run build` — сборка проекта
+
+### Технологии
+
+- Node JS
+- Express JS
+- JS
+- React JS
+
