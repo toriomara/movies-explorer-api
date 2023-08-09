@@ -49,7 +49,7 @@ const login = (req, res, next) => {
 
 const updateUser = (req, res, next) => {
   const { email, name } = req.body;
-  User.findByIdAndUpdate(
+  return User.findByIdAndUpdate(
     req.user._id,
     { email, name },
     {
@@ -61,7 +61,7 @@ const updateUser = (req, res, next) => {
       throw new NotFoundError(MESSAGES.NOT_FOUND);
     })
     .then((user) => {
-      res.send(user);
+      res.send({name: user.name, email: user.email});
     })
     .catch((err) => {
       if (err.code === 11000) {

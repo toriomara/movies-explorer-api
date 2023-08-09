@@ -5,6 +5,8 @@ const whitelist = [
   'https://localhost:3001',
   'https://movie43.nomoredomains.rocks',
   'http://movie43.nomoredomains.rocks',
+  'https://movie43.nomoreparties.co',
+  'http://movie43.nomoreparties.co',
   'https://api.movie43.nomoredomains.rocks',
   'http://api.movie43.nomoredomains.rocks',
 ];
