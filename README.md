@@ -1,6 +1,7 @@
 # Movies Explorer API
 
 Дипломный проект Yandex.Praktikum факультета "Веб-разработка".
+Проект работает на [download and install Node.js](https://nodejs.org/en/download/).
 
 В данном репозитории находится backend часть приложения `Movie43`, включающий фронтенд и бэкенд части приложения со следующими возможностями: 
 - авторизации и регистрации пользователей;
@@ -31,18 +32,18 @@ https://movie43.nomoreparties.co/
 
 Установите зависимости:
 
-`npm install` 
+### `npm install` 
 или
-`yarn init`
+### `yarn init`
 
 Запустите сервер разработки:
 
-`npm start`
+### `npm start`
 или
-`yarn start`
+### `yarn start`
 
 Сборка проекта:
-`npm run build` — сборка проекта
+### `npm run build`
 
 ### Технологии
 
