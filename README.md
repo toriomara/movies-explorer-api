@@ -8,19 +8,18 @@
 - добавление и удаление фильмов из избранного;
 - редактирование данных пользователя.
 
-##
-Сервер имеет следующие Роуты сервера:
+## Роуты:
 * GET     /users/me - возвращает информацию о пользователе (имя и почта);
 * PATCH   /users/me - обновляет информацию о пользователе (имя и почта);
 * GET     /movies - возвращает все сохранённые пользователем фильмы;
 * POST    /movies - создаёт фильм;
 * DELETE  /movies/_id - удаляет сохранённый фильм по id;
 
-Адрес репозитория: https://github.com/toriomara/movies-explorer-api
-Адрес сервера: https://movie43.nomoredomains.rocks
-Адрес frontend части проекта: https://github.com/toriomara/movies-explorer-frontend
+Адрес репозитория: https://github.com/toriomara/movies-explorer-api  
+Адрес сервера: https://movie43.nomoredomains.rocks  
+Адрес frontend части проекта: https://github.com/toriomara/movies-explorer-frontend  
 
-## Ссылки на проект
+## Адрес backend server
 https://movie43.nomoreparties.co/
 
 ## Запуск проекта 
